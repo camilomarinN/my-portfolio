@@ -1,0 +1,27 @@
+.introDivider {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.2) 30%,
+    rgba(255, 255, 255, 0.2) 70%,
+    transparent
+  );
+}
+
+@media (max-width: 768px) {
+  .grid-cols-\[1fr_auto_1fr\] {
+    grid-template-columns: 1fr;
+  }
+
+  .introDivider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.2) 30%,
+      rgba(255, 255, 255, 0.2) 70%,
+      transparent
+    );
+  }
+}

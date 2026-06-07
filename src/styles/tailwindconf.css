@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+  --neon: 0 0 1px white, 0 0 10px white;
+}
