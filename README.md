@@ -30,19 +30,32 @@ Plataforma web interna para gestionar fiados (créditos) de clientes en un resta
 - Backend: Spring Boot, MyBatis
 - Frontend: Thymeleaf, jQuery, SweetAlert2
 - Base de datos: Oracle
-- Funcionalidades: Login de usuarios, roles, historial de crédito, alertas y exportación a Excel
+- Funcionalidades: Login de usuarios, roles, historial de crédito y alertas.
 
-🔗 [Ver repositorio](https://github.com/usuario/fiados-app)
+🔗 [Ver repositorio Back](https://github.com/camilomarinN/hungaros-Backend-Proyect)
+🔗 [Ver repositorio Front](https://github.com/camilomarinN/Hungaro-s-debts-Management)
+
 
 ---
 
-### 🍰 E-commerce de Pastelería
+### 🍰 E-commerce de Pastelería (Finalizando desarrollo)
 Sitio web de ventas para una pastelería con carrito de compras, login de usuarios y gestión de productos.
 - Backend: Java, JSP, Servlets
 - Frontend: Bootstrap, jQuery
 - Funcionalidades: Registro e inicio de sesión, carrito anónimo y autenticado, visualización de productos
 
 🔗 [Ver repositorio](https://github.com/usuario/pasteleria-web)
+
+---
+
+### 📅 Pagina para reserva de alojamientos
+Sitio web para el agendamientos de zonas comunes y hotelería, validación de fechas y disponibilidad, autenticacionces y Stored Procedures.
+- Backend: C#, ASP.NET CORE, EF-CORE, Javascript
+- Frontend: Bootstrap, Razor Views
+- Base de datos: SQL Server | Stored Procedures
+- Funcionalidades: Registro e inicio de sesión, recuperación de cuenta con envio de correo, visualización de disponibilidad por fechas y sedes, administración avanzada de cada registro.
+
+🔗 [Ver repositorio](https://github.com/camilomarinN/ReservasAPP)
 
 ---
 
@@ -79,7 +92,7 @@ Sitio web de ventas para una pastelería con carrito de compras, login de usuari
 ## 📬 Contacto
 
 - 📧 Email: naranjocamilo26@gmail.com  
-- 💼 LinkedIn: [linkedin.com/in/camilomarin](www.linkedin.com/in/camilo-marín-naranjo-794aa7275)  
+- 💼 LinkedIn: [linkedin.com/in/camilomarin](https://www.linkedin.com/in/camilo-mar%C3%ADn-naranjo/)  
 - 🖥️ Número de contacto: +57 3226867932
 
 ---
