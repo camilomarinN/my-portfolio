@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
-@theme {
-  --neon: 0 0 1px white, 0 0 10px white;
+/* "static" fuerza a Tailwind a emitir estas variables aunque solo se usen en CSS propio */
+@theme static {
+  --neon: 0 0 10px white, 0 0 10px white;
+  --color-accent: #22d3ee; /* único color de acento del sitio */
 }
