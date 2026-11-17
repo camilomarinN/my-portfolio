@@ -1,34 +1,33 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
+  SiSpringboot,
   SiDjango,
   SiDotnet,
+  SiReact,
   SiTailwindcss,
+  SiJavascript,
   SiOracle,
+  SiMysql,
   SiMongodb,
   SiDocker,
   SiKubernetes,
+  SiGit,
+  SiHtml5,
+  SiCss3,
   SiClaude,
 } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
+import { FaJava, FaAws } from "react-icons/fa";
+import MyBatisIcon from "./icons/MyBatisIcon";
 import { useLang } from "../i18n/LanguageContext";
 import "../styles/techCarousel.css";
 
-import JavaLogo from "../assets/icons/JavaLogo.png";
-import SpringLogo from "../assets/icons/SpringbootLogo.png";
-import MyBatisLogo from "../assets/icons/MyBatisLogo.png";
-import MysqlLogo from "../assets/icons/MysqlLogo.png";
-import ReactLogo from "../assets/icons/ReactLogo.png";
-import HtmlLogo from "../assets/icons/htmlLogo.png";
-import CssLogo from "../assets/icons/cssLogo.png";
-import JsLogo from "../assets/icons/jsLogo.png";
-import GitLogo from "../assets/icons/GitLogo.png";
-
 // level: advanced | intermediate | basic | daily   (se traduce desde translations.js)
-// Cada tecnología usa un PNG (src) o un ícono de react-icons (Icon + color).
+// Todos los íconos son componentes (react-icons + 1 SVG propio): sin archivos de imagen que descargar.
 const techs = [
   {
     name: "Java",
-    src: JavaLogo,
+    Icon: FaJava,
+    color: "#F89820",
     level: "advanced",
     desc: {
       es: "Mi lenguaje principal: aplicaciones web y microservicios empresariales.",
@@ -37,7 +36,8 @@ const techs = [
   },
   {
     name: "Spring Boot",
-    src: SpringLogo,
+    Icon: SiSpringboot,
+    color: "#6DB33F",
     level: "advanced",
     desc: {
       es: "APIs REST y microservicios desplegados en AWS.",
@@ -46,7 +46,8 @@ const techs = [
   },
   {
     name: "MyBatis",
-    src: MyBatisLogo,
+    Icon: MyBatisIcon,
+    color: "#E5E7EB",
     level: "advanced",
     desc: {
       es: "Integración de aplicaciones Java con bases de datos Oracle y MySQL.",
@@ -75,7 +76,8 @@ const techs = [
   },
   {
     name: "React",
-    src: ReactLogo,
+    Icon: SiReact,
+    color: "#61DAFB",
     level: "intermediate",
     desc: {
       es: "React + Vite en Hungaro's Debts Management y en este portafolio.",
@@ -94,7 +96,8 @@ const techs = [
   },
   {
     name: "JavaScript",
-    src: JsLogo,
+    Icon: SiJavascript,
+    color: "#F7DF1E",
     level: "intermediate",
     desc: {
       es: "Interactividad en el frontend, junto a React.",
@@ -113,7 +116,8 @@ const techs = [
   },
   {
     name: "MySQL",
-    src: MysqlLogo,
+    Icon: SiMysql,
+    color: "#5B9BD5",
     level: "advanced",
     desc: {
       es: "Bases de datos relacionales en proyectos empresariales e integraciones.",
@@ -162,7 +166,8 @@ const techs = [
   },
   {
     name: "Git",
-    src: GitLogo,
+    Icon: SiGit,
+    color: "#F05032",
     level: "advanced",
     desc: {
       es: "Control de versiones con GitHub y Bitbucket en equipos ágiles.",
@@ -171,7 +176,8 @@ const techs = [
   },
   {
     name: "HTML5",
-    src: HtmlLogo,
+    Icon: SiHtml5,
+    color: "#E34F26",
     level: "advanced",
     desc: {
       es: "Maquetación semántica de interfaces web.",
@@ -180,7 +186,8 @@ const techs = [
   },
   {
     name: "CSS3",
-    src: CssLogo,
+    Icon: SiCss3,
+    color: "#2965F1",
     level: "intermediate",
     desc: {
       es: "Estilos responsive con Tailwind CSS y Bootstrap.",
@@ -336,11 +343,7 @@ export default function TechCarousel() {
               onPointerEnter={(e) => isCenter && e.pointerType === "mouse" && setHovered(true)}
               onPointerLeave={() => isCenter && setHovered(false)}
             >
-              {tech.Icon ? (
-                <tech.Icon className="w-full h-full p-2" style={{ color: tech.color }} aria-hidden="true" />
-              ) : (
-                <img src={tech.src} alt="" draggable={false} className="w-full h-full object-contain" />
-              )}
+              <tech.Icon className="w-full h-full p-2" style={{ color: tech.color }} aria-hidden="true" />
             </button>
           );
         })}
